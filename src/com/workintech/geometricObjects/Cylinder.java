@@ -1,6 +1,8 @@
-package com.workintech.model;
+package com.workintech.geometricObjects;
 
-public class Cylinder extends Circle{
+import com.workintech.geometricObjects.Circle;
+
+public class Cylinder extends Circle {
     private double height;
 
     private double checkHeight(double height){

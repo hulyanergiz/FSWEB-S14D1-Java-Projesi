@@ -1,4 +1,4 @@
-package com.workintech.model;
+package com.workintech.geometricObjects;
 
 public class Rectangle {
     private double width;
