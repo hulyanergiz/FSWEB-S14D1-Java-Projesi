@@ -1,7 +1,12 @@
+import com.workintech.company.HRManager;
+import com.workintech.company.JuniorDeveloper;
+import com.workintech.company.MidDeveloper;
+import com.workintech.company.SeniorDeveloper;
 import com.workintech.geometricObjects.Circle;
 import com.workintech.geometricObjects.Cuboid;
 import com.workintech.geometricObjects.Cylinder;
 import com.workintech.geometricObjects.Rectangle;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -41,5 +46,36 @@ public class Main {
         System.out.println("cuboid.height= " + cuboid.getHeight());
 
         System.out.println("cuboid.volume= " + cuboid.getVolume());
+
+
+        System.out.println("------------------------");
+
+        System.out.println("addEmployee Test Outputs");
+        JuniorDeveloper jDev=new JuniorDeveloper(1,"Junior Dev",30000);
+        JuniorDeveloper jDev2=new JuniorDeveloper(2,"Junior Dev 2",30000);
+        MidDeveloper mDev=new MidDeveloper(3,"Mid Dev",45000);
+        MidDeveloper mDev2=new MidDeveloper(4,"Mid Dev 2",45000);
+        SeniorDeveloper sDev=new SeniorDeveloper(5,"Senior Dev",65000);
+        HRManager hrManager=new HRManager(6,"HR Manager",80000);
+        hrManager.addEmployee(jDev,-1);
+        hrManager.addEmployee(jDev,5);
+        hrManager.addEmployee(jDev,1);
+        hrManager.addEmployee(jDev,2);
+        hrManager.addEmployee(jDev2,2);
+        hrManager.addEmployee(mDev,1);
+        hrManager.addEmployee(mDev,2);
+        hrManager.addEmployee(mDev2,1);
+        hrManager.addEmployee(sDev,1);
+
+
+        System.out.println();
+
+
+
+
+
+
+
+
     }
 }
